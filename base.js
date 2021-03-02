@@ -8,29 +8,29 @@ module.exports = {
     plugins: ['react'],
 
     env: {
-      browser: true,
-      commonjs: true,
-      es6: true,
-      jest: true,
-      node: true,
+        browser: true,
+        commonjs: true,
+        es6: true,
+        jest: true,
+        node: true,
     },
 
     parserOptions: {
-      ecmaVersion: 2018,
-      sourceType: 'module',
-      ecmaFeatures: {
-        jsx: true,
-      },
+        ecmaVersion: 2018,
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true,
+        },
     },
 
     settings: {
-      react: {
-        version: 'detect',
-      },
+        react: {
+            version: 'detect',
+        },
     },
 
     rules: {
-      'react/jsx-uses-vars': 'warn',
-      'react/jsx-uses-react': 'warn',
+        'react/jsx-uses-vars': 'warn',
+        'react/jsx-uses-react': 'warn',
     },
-  };
+};
