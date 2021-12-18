@@ -1,3 +1,4 @@
+/* eslint-disable sort-keys */
 const { jsExtensions, tsExtensions } = require('./extensions');
 
 const allExtensions = [...jsExtensions, ...tsExtensions];
@@ -20,8 +21,8 @@ module.exports = {
                 functions: false,
                 classes: false,
                 variables: false,
-                typedefs: false,
-            },
+                typedefs: false
+            }
         ],
         'no-unused-expressions': 'off',
         '@typescript-eslint/no-unused-expressions': [
@@ -29,16 +30,16 @@ module.exports = {
             {
                 allowShortCircuit: true,
                 allowTernary: true,
-                allowTaggedTemplates: true,
-            },
+                allowTaggedTemplates: true
+            }
         ],
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': [
             'warn',
             {
                 args: 'none',
-                ignoreRestSiblings: true,
-            },
+                ignoreRestSiblings: true
+            }
         ],
         'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': 'warn',
@@ -51,48 +52,48 @@ module.exports = {
                     '[static-methods-alpha]',
                     '[properties-alpha]',
                     '[constructor]',
-                    '[methods-alpha]',
+                    '[methods-alpha]'
                 ],
                 groups: {
                     'static-properties-alpha': [
                         {
                             type: 'property',
                             static: true,
-                            sort: 'alphabetical',
-                        },
+                            sort: 'alphabetical'
+                        }
                     ],
                     'static-methods-alpha': [
                         {
                             type: 'method',
                             static: true,
-                            sort: 'alphabetical',
-                        },
+                            sort: 'alphabetical'
+                        }
                     ],
                     'properties-alpha': [
                         {
                             type: 'property',
                             propertyType: 'Literal',
-                            sort: 'alphabetical',
-                        },
+                            sort: 'alphabetical'
+                        }
                     ],
-                    'methods-alpha': [{ type: 'method', sort: 'alphabetical' }],
-                },
-            },
-        ],
+                    'methods-alpha': [{ type: 'method', sort: 'alphabetical' }]
+                }
+            }
+        ]
     },
     settings: {
         'import/extensions': allExtensions,
         'import/parsers': {
-            '@typescript-eslint/parser': tsExtensions,
+            '@typescript-eslint/parser': tsExtensions
         },
         'import/resolver': {
-            node: { extensions: allExtensions },
-        },
+            node: { extensions: allExtensions }
+        }
     },
     overrides: [
         {
             files: ['*.ts', '*.tsx', '*.d.ts'],
-            parser: '@typescript-eslint/parser',
-        },
-    ],
+            parser: '@typescript-eslint/parser'
+        }
+    ]
 };

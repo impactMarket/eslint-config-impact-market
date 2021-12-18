@@ -6,10 +6,11 @@ module.exports = {
             'error',
             {
                 arrowParens: 'avoid',
+                bracketSameLine: true,
                 printWidth: 80,
                 singleQuote: true,
-                trailingComma: 'none',
-            },
-        ],
-    },
+                trailingComma: 'none'
+            }
+        ]
+    }
 };

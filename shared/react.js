@@ -1,3 +1,4 @@
+/* eslint-disable sort-keys */
 module.exports = {
     parserOptions: { ecmaFeatures: { jsx: true } },
     plugins: ['react', 'react-hooks'],
@@ -10,8 +11,8 @@ module.exports = {
         'react/jsx-curly-brace-presence': [
             'error',
             {
-                props: 'never',
-            },
+                props: 'never'
+            }
         ],
         'react/jsx-key': 'error',
         'react/jsx-no-duplicate-props': 'error',
@@ -29,9 +30,9 @@ module.exports = {
         'react/require-default-props': 'warn',
         'react/self-closing-comp': 'error',
         'react/sort-prop-types': 'error',
-        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/rules-of-hooks': 'error'
     },
     settings: {
-      react: { version: 'detect' },
-    },
-  };
+        react: { version: 'detect' }
+    }
+};

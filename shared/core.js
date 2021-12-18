@@ -1,12 +1,25 @@
+/* eslint-disable sort-keys */
 const { jsExtensions } = require('./extensions');
 
 module.exports = {
+    env: { es6: true, jest: true },
+    globals: {
+        console: false,
+        exports: false,
+        global: false,
+        module: false,
+        require: false
+    },
+    overrides: [
+        {
+            files: ['*.d.ts'],
+            rules: {
+                'import/order': 'off'
+            }
+        }
+    ],
     parser: '@babel/eslint-parser',
     parserOptions: {
-        sourceType: 'module',
-        ecmaVersion: 2021,
-        ecmaFeatures: { impliedStrict: true },
-        requireConfigFile: false,
         babelOptions: {
             parserOpts: {
                 plugins: [
@@ -14,24 +27,20 @@ module.exports = {
                     'jsx',
                     'classProperties',
                     'classPrivateProperties',
-                    'classPrivateMethods',
-                ],
-            },
+                    'classPrivateMethods'
+                ]
+            }
         },
-    },
-    env: { es6: true, jest: true },
-    globals: {
-        console: false,
-        exports: false,
-        global: false,
-        module: false,
-        require: false,
+        ecmaFeatures: { impliedStrict: true },
+        ecmaVersion: 2021,
+        requireConfigFile: false,
+        sourceType: 'module'
     },
     plugins: [
         '@babel',
         'import',
         'sort-class-members',
-        'sort-imports-es6-autofix',
+        'sort-imports-es6-autofix'
     ],
     rules: {
         'max-depth': 'error',
@@ -92,24 +101,24 @@ module.exports = {
             {
                 blankLine: 'always',
                 next: '*',
-                prev: ['const', 'let', 'var'],
+                prev: ['const', 'let', 'var']
             },
             {
                 blankLine: 'any',
                 next: ['const', 'let', 'var'],
-                prev: ['const', 'let', 'var'],
-            },
+                prev: ['const', 'let', 'var']
+            }
         ],
         'prefer-const': 'error',
         'prefer-destructuring': [
             'error',
             {
                 AssignmentExpression: { array: false, object: false },
-                VariableDeclarator: { array: true, object: true },
+                VariableDeclarator: { array: true, object: true }
             },
             {
-                enforceForRenamedProperties: false,
-            },
+                enforceForRenamedProperties: false
+            }
         ],
         'prefer-spread': 'error',
         'prefer-template': 'error',
@@ -121,8 +130,8 @@ module.exports = {
             {
                 ignoreCase: false,
                 ignoreMemberSort: false,
-                memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-            },
+                memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
+            }
         ],
         'sort-keys': ['error', 'asc', { natural: true }],
         'spaced-comment': 'error',
@@ -132,24 +141,15 @@ module.exports = {
         'import/named': 'error',
         'import/no-unresolved': 'off',
         'new-cap': ['error', { capIsNewExceptions: ['BigNumber'] }],
-        /* eslint-enable sort-keys */
-        'default-case': 'off',
+        'default-case': 'off'
     },
     settings: {
         'import/extensions': jsExtensions,
         'import/parsers': {
-            '@babel/eslint-parser': jsExtensions,
+            '@babel/eslint-parser': jsExtensions
         },
         'import/resolver': {
-            node: { extensions: jsExtensions },
-        },
-    },
-    overrides: [
-        {
-            files: ['*.d.ts'],
-            rules: {
-                'import/order': 'off',
-            },
-        },
-    ],
+            node: { extensions: jsExtensions }
+        }
+    }
 };
