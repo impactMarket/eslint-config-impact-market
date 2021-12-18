@@ -22,7 +22,9 @@
         "eslint-plugin-import": "^2.23.4",
         "eslint-plugin-prettier": "^3.4.0",
         "eslint-plugin-react": "^7.24.0",
-        "eslint-plugin-react-hooks": "^4.2.0"
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "eslint-plugin-sort-class-members": "^1.9.0",
+        "eslint-plugin-sort-imports-es6-autofix": "^0.5.0"
     },
     "peerDependencies": {
         "@babel/core": ">=7.12.0",

@@ -27,7 +27,12 @@ module.exports = {
         module: false,
         require: false,
     },
-    plugins: ['@babel', 'import'],
+    plugins: [
+        '@babel',
+        'import',
+        'sort-class-members',
+        'sort-imports-es6-autofix',
+    ],
     rules: {
         'max-depth': 'error',
         'max-params': ['error', 4],

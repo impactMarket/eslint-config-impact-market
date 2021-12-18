@@ -6,10 +6,10 @@ module.exports = {
             'error',
             {
                 arrowParens: 'avoid',
-                printWidth: 120,
+                printWidth: 80,
                 singleQuote: true,
                 trailingComma: 'none',
             },
         ],
     },
-  };
+};
