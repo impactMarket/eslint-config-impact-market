@@ -10,7 +10,7 @@ impactMarket ESLint config
 
 ## Installation
 
-add `"eslint-config-impact-market": "impactMarket/eslint-config"` to your package.json
+add `"eslint-config-impact-market": "impactMarket/eslint-config-impact-market"` to your package.json
 
 ## Usage
 

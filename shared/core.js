@@ -39,8 +39,11 @@ module.exports = {
     plugins: [
         '@babel',
         'import',
+        'react',
+        'react-hooks',
         'sort-class-members',
-        'sort-imports-es6-autofix'
+        'sort-imports-es6-autofix',
+        'prettier'
     ],
     rules: {
         'max-depth': 'error',
