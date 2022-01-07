@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-impact-market",
-    "version": "2.0.0-beta.2",
+    "version": "2.0.0",
     "license": "Apache-2.0",
     "main": "default.js",
     "files": [
