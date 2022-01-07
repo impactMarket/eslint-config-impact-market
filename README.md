@@ -1,6 +1,6 @@
-# eslint-config-im
+# eslint-config-impact-market
 
-Impact Market React ESLint config
+impactMarket ESLint config
 
 ## Covers
 - React
@@ -10,14 +10,14 @@ Impact Market React ESLint config
 
 ## Installation
 
-add `"eslint-config-im": "impactMarket/eslint-config-im"` to your package.json
+add `"eslint-config-impact-market": "impactMarket/eslint-config-impact-market"` to your package.json
 
 ## Usage
 
 Create an `.eslintrc.yml` file with the following:
 
 ```yaml
-extends: eslint-config-im
+extends: eslint-config-impact-market
 ```
 
 Add the following `script` to your `package.json`:
@@ -33,5 +33,5 @@ Add the following `script` to your `package.json`:
 and run the linter with:
 
 ```sh
-$ npm run lint
+$ yarn lint
 ```
