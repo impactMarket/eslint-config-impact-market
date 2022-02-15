@@ -16,11 +16,11 @@
     "dependencies": {
         "@babel/eslint-parser": "^7.12.17",
         "@babel/eslint-plugin": "^7.12.13",
-        "@typescript-eslint/eslint-plugin": "^4.28.5",
-        "@typescript-eslint/parser": "^4.28.5",
+        "@typescript-eslint/eslint-plugin": "^5.12.0",
+        "@typescript-eslint/parser": "^5.12.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-import": "^2.23.4",
-        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-react": "^7.24.0",
         "eslint-plugin-react-hooks": "^4.2.0",
         "eslint-plugin-sort-class-members": "^1.9.0",
@@ -28,7 +28,7 @@
     },
     "peerDependencies": {
         "@babel/core": ">=7.12.0",
-        "eslint": ">= 7",
+        "eslint": ">= 8",
         "prettier": ">= 2.4"
     },
     "peerDependenciesMeta": {
@@ -39,7 +39,6 @@
     "devDependencies": {
         "@babel/core": "^7.12.9",
         "eslint": "^7.31.0",
-        "jest": "^26.6.3",
         "prettier": "^2.4.1",
         "typescript": "^4.5.4"
     }
