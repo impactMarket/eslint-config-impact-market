@@ -22,13 +22,7 @@ module.exports = {
     parserOptions: {
         babelOptions: {
             parserOpts: {
-                plugins: [
-                    'flow',
-                    'jsx',
-                    'classProperties',
-                    'classPrivateProperties',
-                    'classPrivateMethods'
-                ]
+                plugins: ['flow', 'jsx', 'classProperties', 'classPrivateProperties', 'classPrivateMethods']
             }
         },
         ecmaFeatures: { impliedStrict: true },
@@ -36,15 +30,7 @@ module.exports = {
         requireConfigFile: false,
         sourceType: 'module'
     },
-    plugins: [
-        '@babel',
-        'import',
-        'react',
-        'react-hooks',
-        'sort-class-members',
-        'sort-imports-es6-autofix',
-        'prettier'
-    ],
+    plugins: ['@babel', 'import', 'react', 'react-hooks', 'sort-class-members', 'sort-imports-es6-autofix', 'prettier'],
     rules: {
         'max-depth': 'error',
         'max-params': ['error', 4],
@@ -89,8 +75,10 @@ module.exports = {
         'no-tabs': ['error', { allowIndentationTabs: true }],
         'no-throw-literal': 'error',
         'no-undef-init': 'error',
+        'no-undef': 'error',
         'no-underscore-dangle': 'error',
         'no-unneeded-ternary': 'error',
+        'no-unused-vars': 'error',
         'no-use-before-define': 'error',
         'no-useless-call': 'error',
         'no-useless-concat': 'error',
