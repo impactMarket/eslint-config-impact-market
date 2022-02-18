@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-impact-market",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "license": "Apache-2.0",
     "main": "default.js",
     "files": [
@@ -11,7 +11,7 @@
         "shared"
     ],
     "engines": {
-        "node": ">=14.0.0"
+        "node": ">=14"
     },
     "dependencies": {
         "@babel/eslint-parser": "^7.12.17",
@@ -38,7 +38,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.12.9",
-        "eslint": "^7.31.0",
+        "eslint": "^8.9.0",
         "prettier": "^2.4.1",
         "typescript": "^4.5.4"
     }
