@@ -10,14 +10,17 @@ impactMarket ESLint config
 
 ## Installation
 
-add `"eslint-config-impact-market": "impactMarket/eslint-config-impact-market"` to your package.json
+add `eslint-config-impact-market` to your package.json
 
 ## Usage
 
-Create an `.eslintrc.yml` file with the following:
+Create an `.eslintrc.js` file with the following:
 
-```yaml
-extends: eslint-config-impact-market
+```javascript
+module.exports = {
+    extends: ['impact-market/node', 'prettier'],
+};
+
 ```
 
 Add the following `script` to your `package.json`:
